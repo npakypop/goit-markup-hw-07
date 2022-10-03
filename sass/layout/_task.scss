@@ -1,3 +1,6 @@
+.task {
+    @extend %section;
+}
 .task__list {
     @extend %list;
     display: flex;
@@ -7,7 +10,7 @@
     display: block;
 }
 
-.task__item+.task__item {
+.task__item + .task__item {
     margin-left: 30px;
 }
 

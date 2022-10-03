@@ -1,3 +1,7 @@
+.benefits {
+    @extend %section;
+    @extend %no-padding-bottom;
+}
 .benefits__list {
     @extend %list;
     display: flex;
@@ -16,7 +20,7 @@
     height: 120px;
     background-color: var(--btn-bcg-color);
 }
-.benefits__item+.benefits__item {
+.benefits__item + .benefits__item {
     margin-left: 30px;
 }
 

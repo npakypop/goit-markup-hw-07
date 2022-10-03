@@ -1,9 +1,12 @@
+.client {
+    @extend %section;
+}
 .client__list {
     @extend %list;
     display: flex;
 }
 
-.client__item+.client__item {
+.client__item + .client__item {
     margin-left: 30px;
 }
 
@@ -17,6 +20,7 @@
 }
 
 .client__link {
+    @extend %link;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,14 +33,13 @@
     transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .client__icon {
     fill: currentColor;
-}
-
-.client__link:hover,
-.client__link:focus {
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
 }
