@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-color: #757575;
   --secondary-color: #212121;
   --accent-color: #2196f3;
@@ -8,37 +8,37 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --btn-bcg-color: #f5f4fa;
-}
-h1,
+} */
+/* h1,
 h2,
 h3,
 p {
   padding: 0;
   margin: 0;
-}
-.container {
+} */
+/* .container {
   padding-left: 15px;
   padding-right: 15px;
 
   width: 1200px;
   margin: 0 auto;
-}
-.list {
+} */
+/* .list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
-}
-.section {
+} */
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 .section.no-padding-bottom {
   padding-bottom: 0;
 }
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -49,15 +49,15 @@ p {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
 /* ==================================================================Buttons styles ======================================================================================*/
-.btn {
+/* .btn {
   border: none;
   font-family: inherit;
   cursor: pointer;
-}
-.btn--primary {
+} */
+/* .btn--primary {
   padding: 10px 32px;
 
   font-weight: 700;
@@ -92,18 +92,18 @@ p {
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* ==================================================================================Body ===========================================================================================================*/
 
-body {
+/* body {
   font-family: Roboto, sans-serif;
   background-color: var(--bcg-pr-color);
   color: var(--primary-color);
   letter-spacing: 0.03em;
-}
+} */
 
-.section-title {
+/* .section-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -111,11 +111,11 @@ body {
   line-height: 1.16;
   text-align: center;
   color: var(--secondary-color);
-}
+} */
 
 /*---------------------------------------------------------------------------- Header --------------------------------------------------------------------*/
 
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 .header__wrap {
@@ -133,8 +133,8 @@ body {
 }
 .header-nav__item:not(:last-child) {
   margin-right: 50px;
-}
-.logo {
+} */
+/* .logo {
   display: block;
 
   font-family: "Raleway";
@@ -146,8 +146,8 @@ body {
 }
 .logo-web {
   color: var(--accent-color);
-}
-.header-nav__link {
+} */
+/* .header-nav__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -179,23 +179,23 @@ body {
   border-radius: 2px;
   bottom: -1px;
   left: 0;
-}
+} */
 
 /*------------------------------------------------------------------ header contacts ----------------------------------------------------------*/
 
-.header-contact__list {
+/* .header-contact__list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 .header-contact__item + .header-contact__item {
   margin-left: 50px;
-}
+} */
 /* Альтернитива 
     .header-contact__list .item:not(:last-child) {
     margin-right: 50px;
 } */
-.header-contact__icon {
+/* .header-contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -221,11 +221,11 @@ body {
 .header-contact__link .icon:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-}
+} */
 
 /* ------------------------------------------------------------section decision --------------------------------------------------------------------------*/
 
-.decision {
+/* .decision {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
@@ -255,29 +255,29 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-}
+} */
 
-/* =====================================================================section specifics__list =====================================================================*/
+/* =====================================================================section benefits__list =====================================================================*/
 
-.specifics__list {
+/* .benefits__list {
   display: flex;
 }
-.specifics__item {
-  /* width: calc((100%-90px)/4); */
+.benefits__item {
   width: 270px;
 }
 
-.specifics__rect {
+.benefits__rect {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   height: 120px;
   background-color: var(--btn-bcg-color);
-}
+} */
 
 /* Также можно было вместо использования псевдоклассов указать один класс с общими свойствами для всех элементов и потом отдельно создать классы для каждого элемента изменяя только bcg-image. и добавить эти классы в каждый элемент списка 
-.specifics__item::before {
+-----------------------------------------------------
+.benefits__item::before {
     content: '';
     display: block;
     height: 120px;
@@ -286,50 +286,50 @@ body {
     background-repeat: no-repeat;
 }
 .icon-antenna::before {
-    background-image: url(../images/specifics/antenna.svg);
+    background-image: url(../images/benefits/antenna.svg);
 }
 ...
 */
-/* .specifics__item:nth-child(1)::before {
+/* .benefits__item:nth-child(1)::before {
   content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(../images/specifics/antenna.svg);
+  background-image: url(../images/benefits/antenna.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
-.specifics__item:nth-child(2)::before {
+.benefits__item:nth-child(2)::before {
   content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(../images/specifics/clock.svg);
+  background-image: url(../images/benefits/clock.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
-.specifics__item:nth-child(3)::before {
+.benefits__item:nth-child(3)::before {
   content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(../images/specifics/diagram.svg);
+  background-image: url(../images/benefits/diagram.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
-.specifics__item:nth-child(4)::before {
+.benefits__item:nth-child(4)::before {
   content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(../images/specifics/astronaut.svg);
+  background-image: url(../images/benefits/astronaut.svg);
   background-position: center;
   background-repeat: no-repeat;
-} */
-.specifics__item + .specifics__item {
+} -------------------------------------------------*/
+/* .benefits__item + .benefits__item {
   margin-left: 30px;
 }
-.specifics__title {
+.benefits__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -338,15 +338,15 @@ body {
   text-transform: uppercase;
   color: var(--secondary-color);
 }
-.specifics__desc {
+.benefits__desc {
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-color);
-}
+} */
 
 /* =====================================================================Task ===========================================================================*/
 
-.task__list {
+/* .task__list {
   display: flex;
 }
 .task__img {
@@ -378,11 +378,11 @@ body {
   text-transform: uppercase;
 
   color: var(--white-color);
-}
+} */
 
 /* ====================================================================section team =================================================*/
 
-.team {
+/* .team {
   background-color: var(--btn-bcg-color);
 }
 .team__list {
@@ -422,7 +422,7 @@ body {
   color: var(--primary-color);
 }
 
-.team__social {
+.team__social-list {
   display: flex;
 
   margin-left: auto;
@@ -459,11 +459,11 @@ body {
 .team__link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
-}
+} */
 
 /* ================================================================client =============================================================*/
 
-.client__list {
+/* .client__list {
   display: flex;
 }
 .client__item + .client__item {
@@ -498,19 +498,19 @@ body {
 .client__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-}
+} */
 
 /* ==================================================================================Portfolio =================================================================================*/
 
-.filter {
+/* .filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 .filter__item + .filter__item {
   margin-left: 8px;
-}
-.example {
+} */
+/* .example {
   display: flex;
   flex-wrap: wrap;
 }
@@ -600,10 +600,10 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-color);
-}
+} */
 
 /* =====================================================================footer================================================= */
-.footer {
+/* .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -700,7 +700,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------------footer forms---------------------------------- */
-.footer-subscribe__wrap {
+/* .footer-subscribe__wrap {
   position: relative;
 }
 .footer-subscribe__title {
@@ -746,10 +746,10 @@ body {
   height: 50px;
   padding: 10px 28px;
   text-align: left;
-}
+}  */
 
 /* ==============================================================================MODAL========================= */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -767,8 +767,8 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
-}
-.modal {
+} */
+/* .modal {
   padding: 40px;
 
   position: absolute;
@@ -812,11 +812,11 @@ body {
 }
 .modal__close-btn:hover .modal__close-icon {
   fill: var(--accent-color);
-}
+} */
 
 /* ====================================================================================Modal FORMS======================================= */
 
-.modal__heading {
+/* .modal__heading {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -931,4 +931,4 @@ body {
 }
 .modal__check:checked + .modal__icon-check .modal__icon-agree {
   opacity: 1;
-}
+} */

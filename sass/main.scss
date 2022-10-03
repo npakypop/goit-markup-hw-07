@@ -1,4 +1,5 @@
 // utils styles
+@import './utils/placeholder';
 @import './utils/vars';
 @import './utils/vissualy_hidden';
 
@@ -7,14 +8,27 @@
 @import './base/common';
 @import './base/reset';
 @import './base/container';
+@import './base/section';
 
 
 //components styles
-@import './components/titles';
 @import './components/logo';
 @import './components/btn';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/footer-subsc-form';
+
+
 
 
 
 //layouts styles
 @import './layout/header';
+@import './layout/decision';
+@import './layout/benefits';
+@import './layout/task';
+@import './layout/team';
+@import './layout/client';
+@import './layout/filter';
+@import './layout/example';
+@import './layout/footer';
